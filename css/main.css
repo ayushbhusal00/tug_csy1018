@@ -7,10 +7,12 @@ body{
   padding: 0;
   font-size: 15px;
   font-family: 'Sanchez', serif;
+
 }
 
 /*Header Portion begins from here*/
 header{
+
   font-size: 25px;
   color: black
 }
@@ -54,18 +56,20 @@ a{
   color: black;
 }
 /*Header Portion ends here*/
+
 /*Section/body begins from here*/
 section{
   padding-top: 7%;
 
 }
-
+/*contents for contact form begins here*/
 .filler{
   background-color: #b7e0ed;
   text-align: left;
   border-radius: 5px;
-  padding: 5% 5%
-
+  padding: 5% 5%;
+  margin: 1%;
+  box-shadow:  0px 5px 20px #888;
 }
 
 input[type=text] {
@@ -100,7 +104,30 @@ input[type=text] {
     font-size: 16px;
     resize: none;
   }
+  /*contents for contact form ends here*/
+
+  /*contents for CV begins here*/
+.pagecontent{
+  padding: 2% 2%;
+  margin: 0.5%;
+  background-color: #b7e0ed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0px 5px 20px #888;
+  font-size: 20px;
+}
+.personalinfo , .education , .skills , .language , .hobbies , .experience{
+  width: 41%;
+  padding: 0% 1.5%;
+}
+  /*contents for CV ends here*/
+
+
   /*Section/body ends here*/
+
 /*Footer Portion begins from here*/
 footer{
   background: #7E8F7C;
@@ -126,7 +153,7 @@ footer h3 {
 font-size: 20px;
 }
 
-footer .mail {
+footer .formmail {
   width: 20%;
   padding: 1% 1%;
   border: 2px solid #888888;
