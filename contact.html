@@ -1,45 +1,62 @@
-<!--Name:Ayush Bhusal
-    Nile ID :17439840 -->
+<!--Name:Ayush Bhusal -->
+<!--Nile ID :17439840 -->
 <!DOCTYPE html>
 <html>
 <head>
+  <!--Linking "utf-8"characterset-->
   <meta charset="utf-8">
   <!-- Links html with css file -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- links google webfonts to the website-->
-  <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Cutive+Mono|Sanchez" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Montserrat|Open+Sans" rel="stylesheet">
   <!-- Adding social media icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Personal Portfolio</title>
+  <!--Website icon-->
+  <link rel="shortcut icon" href="images/logo.png" type="image/icon" />
+  <title>Ayush Portfolio</title>
 </head>
 <body>
   <header>
-    <div class="navigationbar">
-      <ul>
-        <!--creating different divs for navigation button-->
-        <li><a href="index.html">
-          <div class="button">Home</div>
-          </a>
-        </li>
-          <li><a href="contact.html">
-            <div class="button">Contact</div>
-            </a>
-        </li>
-          <li><a href="bio.html">
-            <div class="button">Bio</div>
-            </a>
-          </li>
-          <li><a href="cv.html">
-            <div class="button">CV</div>
-            </a>
-        </li>
-      </ul>
+    <div class="navigationbar"><!--
+      <div class="logo">
+        <img src="images/logo.png" width="100px" height="100px">
+      </div>
+    -->
+      <div class="tabs">
+        <ul>
+          <!--creating different divs for navigation button-->
+            <li><a href="index.html">
+              <div class="button">Home</div>
+              </a>
+            </li>
+              <li><a href="contact.html">
+                <div class="button">Contact</div>
+                </a>
+            </li>
+              <li><a href="bio.html">
+                <div class="button">Bio</div>
+                </a>
+              </li>
+              <li><a href="cv.html">
+                <div class="button">CV</div>
+                </a>
+            </li>
+        </ul>
+    </div>
     </div>
   </header>
   <!--Only the section part has been made different from all the pages-->
   <section>
-    <div class="filler">
+    <div class="contact">
+    <div class="sociallinks">
+      <div class="postbox">
+        <h1>My PostBox</h1>
+        <p>8973 POBOX 0241<br>New Baneshwor,44600</p>
+      </div>
+        <a href="https://www.facebook.com/profile.php?id=100007096816512" class="fa fa-facebook"></a><h1>Facebook</h1><br>
+          <a href="https://www.instagram.com/ayush.bhusal/" class="fa fa-instagram"></a><h1>Instagram</h1>
+    </div>
+    <div class="sendmail">
         <form method="post" action="" onsubmit="return validate(this)">
             <label>Name:</label>
               <input type="text" name="name" placeholder="Enter your name"><br></br>
@@ -52,6 +69,7 @@
               <input type="submit" name="submit" value="Submit" >
         </form>
     </div>
+  </div>
   </section>
   <footer>
     <div class="subscribe">
