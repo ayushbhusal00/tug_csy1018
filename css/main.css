@@ -1,7 +1,7 @@
 /*Name:Ayush Bhusal*/
 /*Nile ID :17439840*/
 body{
-  background: #89bdd5;
+  background: #b7e0ed;
   color: black;
   margin: 0;
   padding: 0;
@@ -23,35 +23,51 @@ header div{
 .navigationbar{
   display: flex;
   flex-direction: row;
-
   align-items: center;
-  box-shadow: 0px 5px 25px #888;
+}
+.logo{
+  width:30%;
+  padding: 0% 2%;
+  transition: transform 1s  ;
+  transition-timing-function: ease;
+}
+.logo:hover{
+  transform: scale(1.1,1.1);
 }
 
 .tabs ul{
 list-style-type: none;
 display: flex;
 flex-direction: row;
-flex-wrap: wrap;
+
+margin: 0;
 }
 .tabs ul li{
-  width: 25%;
+  width: 30%;
   margin: 0;
   text-align: center;
 }
 .button{
-    padding: 3% 0%;
-
+    padding-top: 30%;
+  padding-bottom: 15%;
+  border-bottom: 5px solid #03a9f4;
+  transition: padding 1s ,background-color 1s;
+  transition-timing-function: ease;
 }
 .button:hover{
-  background-color: white;
-  color: black;
-  padding: 3% 0%;
-}
-.button:active{
   background-color: #0288d1;
   color: black;
-  padding: 3% 0%;
+  padding-top: 30%;
+  padding-bottom: 20%;
+  border-bottom: 5px solid #1976D2
+
+}
+.button:active{
+  background-color: white;
+  color: black;
+  padding-top: 30%;
+  padding-bottom: 20%;
+  border-bottom: 5px solid #1976D2
 }
 a{
   text-decoration: none;
@@ -60,6 +76,40 @@ a{
 /*Header ends here*/
 
 /*Section/body begins from here*/
+/*home page content starts from here*/
+.portrait{
+
+  margin-bottom: 4%;
+  margin-top: 10%;
+  border: 3px solid white;
+  border-radius: 200px;
+  transition: border 1s ,transform 1s;
+  transition-timing-function: ease;
+}
+.portrait:hover{
+  transform: scale(1.2,1.2);
+  border: 6px white solid;
+
+}
+.indexmain{
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  padding-bottom: 10%;
+}
+.indexmain h2{
+  font-size: 40px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+   -webkit-text-fill-color: black;
+   margin: 0;
+}
+.indexmain h3{
+  font-size: 35px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+   -webkit-text-fill-color: black;
+   margin: 0;
+}
 
 /*contents for contact form begins here*/
 .contact{
@@ -133,6 +183,25 @@ input[type=text] {
   padding: 0% 1.5%;
 }
   /*contents for CV ends here*/
+/* contents for bio starts here*/
+.aboutme{
+  display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+  padding:5% 15%;
+  width: 70%;
+  text-align: justify;
+}
+.aboutme div h1{
+  color:red;
+  font-size: 25px;
+  text-align: center;
+
+}
+.aboutme div p{
+  padding-bottom: 5%;
+  padding: 0% 5%;
+}
 
 
   /*Section/body ends here*/
@@ -143,7 +212,7 @@ footer{
   color: #212121;
   padding :1% 0%;
   font-family: 'Montserrat', sans-serif;
-  
+
 }
 footer div{
   text-align: center;
@@ -175,14 +244,18 @@ footer .formmail {
 input[type=button], input[type=submit]{
   background-color: #0f98c6;
   color: white;
-  padding: 1% 2%;
+  padding: 1% 2.5%;
   border: none;
   border-radius: 5px;
   cursor: pointer;/*changes cursor to pointer image */
+  transition: transform 1s ,background-color 2s;
+  transition-timing-function: ease;
 }
 
 input[type=submit]:hover {
+
     background-color:#0A6A8A;
+    transform: scale(1.1,1.1);
 }
 .reserved{
   font-family: 'Cutive Mono', monospace;
@@ -200,9 +273,12 @@ input[type=submit]:hover {
   text-decoration: none;
   margin: 5px 5px;
   border-radius: 50%;
+  transition: transform 1s;
+  transition-timing-function: ease;
 }
 .fa:hover {
     opacity: 0.5;
+    transform: scale(1.1,1.1);
 }
 .fa-facebook{
   background: #3B5998;
