@@ -1,7 +1,7 @@
 /*Name:Ayush Bhusal*/
 /*Nile ID :17439840*/
 body{
-  background: #b7e0ed;
+  background-color: lightblue;
   color: black;
   margin: 0;
   padding: 0;
@@ -24,13 +24,16 @@ header div{
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-shadow: 0px 10px 15px #888;
 }
+
 .logo{
   width:30%;
   padding: 0% 2%;
   transition: transform 1s  ;
   transition-timing-function: ease;
 }
+
 .logo:hover{
   transform: scale(1.1,1.1);
 }
@@ -39,14 +42,16 @@ header div{
 list-style-type: none;
 display: flex;
 flex-direction: row;
-
+padding:0;
 margin: 0;
 }
+
 .tabs ul li{
   width: 30%;
   margin: 0;
   text-align: center;
 }
+
 .button{
     padding-top: 30%;
   padding-bottom: 15%;
@@ -54,14 +59,15 @@ margin: 0;
   transition: padding 1s ,background-color 1s;
   transition-timing-function: ease;
 }
+
 .button:hover{
   background-color: #0288d1;
   color: black;
   padding-top: 30%;
   padding-bottom: 20%;
   border-bottom: 5px solid #1976D2
-
 }
+
 .button:active{
   background-color: white;
   color: black;
@@ -69,6 +75,7 @@ margin: 0;
   padding-bottom: 20%;
   border-bottom: 5px solid #1976D2
 }
+
 a{
   text-decoration: none;
   color: white;
@@ -76,9 +83,38 @@ a{
 /*Header ends here*/
 
 /*Section/body begins from here*/
+/*
+section{
+  background-image: url("../images/asd2.jpg");
+  background-size:  cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+*/
+.topic{
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  padding: 10%;
+}
+
+.topic h2{
+  font-size: 40px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+   -webkit-text-fill-color: black;
+   margin: 0;
+}
+
+.topic h3{
+  font-size: 35px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+   -webkit-text-fill-color: black;
+   margin: 0;
+}
 /*home page content starts from here*/
 .portrait{
-
   margin-bottom: 4%;
   margin-top: 10%;
   border: 3px solid white;
@@ -86,16 +122,18 @@ a{
   transition: border 1s ,transform 1s;
   transition-timing-function: ease;
 }
+
 .portrait:hover{
   transform: scale(1.2,1.2);
   border: 6px white solid;
-
 }
+
 .indexmain{
   font-family: 'Luckiest Guy', cursive;
   text-align: center;
   padding-bottom: 10%;
 }
+
 .indexmain h2{
   font-size: 40px;
   -webkit-text-stroke-width: 1px;
@@ -103,6 +141,7 @@ a{
    -webkit-text-fill-color: black;
    margin: 0;
 }
+
 .indexmain h3{
   font-size: 35px;
   -webkit-text-stroke-width: 1px;
@@ -112,25 +151,36 @@ a{
 }
 
 /*contents for contact form begins here*/
-.contact{
-  background-color: #b3e5fc;
 
-  padding: 2% 2%;
-  box-shadow:  0px 5px 15px #888;
+.contact{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 1%  10%;
+  box-shadow: 0px 5px 20px #888;
+  padding: 2% 2%;
+
 }
+
 .sociallinks{
   text-align: center;
-  width: 50%;
+  width: 30%;
+  font-size: 20px;
+
+}
+.vl {
+    width:5px;
+    background-color:grey;
 }
 .sendmail{
   text-align: left;
   width: 50%;
 }
 
+.sendmail h1{
+  font-size: 30px;
+}
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -152,6 +202,11 @@ input[type=text] {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.postbox{
+  padding-bottom: 20%;
+  font-size: 20px;
+}
 .bigbox{
     width: 100%;
     height: 150px;
@@ -162,20 +217,53 @@ input[type=text] {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-  }
+}
   /*contents for contact form ends here*/
 
   /*contents for CV begins here*/
+
+  .cvmain{
+    margin: 1%  10%;
+    box-shadow: 0px 5px 20px #888;
+    padding: 2% 2%;
+  }
+.cvtitle h1{
+    font-size: 40px;
+    background: #03a9f4;
+    padding:2%;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: white;
+     -webkit-text-fill-color: black;
+    color: white;
+  }
+  .portraitmain{
+  display: flex;
+  flex-direction: row;
+  }
+  .portraitmain div{
+    margin-left: 20%;
+    align-items: center;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: white;
+     -webkit-text-fill-color: black;
+     font-size: 25px;
+  }
+  .portrait2{
+    margin-left: 10%;
+    border: 3px white solid;
+    border-radius: 150px;
+  }
 .pagecontent{
   /*padding: 2% 2%;
   margin: 0.5%;*/
-  background-color: #b7e0ed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  box-shadow: 0px 5px 20px #888;
   font-size: 20px;
 }
 .personalinfo , .education , .skills , .language , .hobbies , .experience{
@@ -184,6 +272,11 @@ input[type=text] {
 }
   /*contents for CV ends here*/
 /* contents for bio starts here*/
+.biofiller{
+  margin: 1%  10%;
+  box-shadow: 0px 5px 20px #888;
+  padding: 2% 2%;
+}
 .aboutme{
   display: flex;
  flex-direction: column;
@@ -204,6 +297,7 @@ input[type=text] {
 }
 
 
+
   /*Section/body ends here*/
 
 /*Footer Portion begins from here*/
@@ -212,7 +306,7 @@ footer{
   color: #212121;
   padding :1% 0%;
   font-family: 'Montserrat', sans-serif;
-
+  box-shadow: 0px -5px 15px #888;
 }
 footer div{
   text-align: center;
