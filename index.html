@@ -2,26 +2,34 @@
 <!--Nile ID :17439840 -->
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!--Linking "utf-8"characterset-->
+  <!--Links "utf-8"characterset-->
   <meta charset="utf-8">
-  <!-- Links html with css file -->
+  <!-- Links html with main.css file -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- links google webfonts to the website-->
   <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Montserrat|Open+Sans|Luckiest+Guy" rel="stylesheet">
-  <!-- Adding social media icon library -->
+  <!-- Adds social media icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--Website icon-->
+  <!--Adds a website icon at the tab of the webpage-->
   <link rel="shortcut icon" href="images/logo.png" type="image/icon" />
+
   <title>Ayush Portfolio</title>
 </head>
+
 <body>
+
+  <!--creatting the navingationbar inside header-->
   <header>
+
     <div class="navigationbar">
+      <!--Adding logo to the header-->
       <div class="logo"><a href="index.html">
       <img src="images/logo3.png" alt="Image not found" width="120px"  height="120px">
-    </a>
+      </a>
       </div>
+
       <div class="tabs">
         <ul>
           <!--creating different divs for navigation button-->
@@ -42,35 +50,49 @@
                 </a>
             </li>
         </ul>
+      </div>
+      <div class="container">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-items">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="bio.html">Bio</a>
+          <a href="cv.html">CV</a>
+        </div>
+      </div>
     </div>
-    </div>
+
   </header>
+
   <section>
+    <!-- Contents for index is created here-->
     <div class="indexmain">
       <img class ="portrait" src="images/portrait.png" alt="Image could not be displayed">
       <h2>HI! I'M AYUSH BHUSAL</h2>
       <h3>I AM A FREELANCER FROM NEPAL</h3>
     </div>
   </section>
+
+  <!--Contents for footer of the web page is created here-->
   <footer>
     <div class="subscribe">
       <h2>Let me know that you have visited</h2>
       <!-- This code adds a form to fill out for subscription -->
       <form method="get" action="">
-          <label class="text">Your Email:</label>
-          <input class="formmail" type="email" name="email" placeholder="Enter e-mail here..">
-          <input type="submit" name="submit" value="Submit" >
+            <label class="text">Your Email:</label>
+            <input class="formmail" type="email" name="email" placeholder="Enter e-mail here..">
+            <input type="submit" name="submit" value="Submit" >
       </form>
       <h3>I'll keep you upto date to my daily adventures</h3>
-  </div>
-  <hr>
-  <div class="reserved">
-    <h4>Copyright © 2018 Ayush Bhusal LTD.</h4>
-    <div class="social">
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-instagram"></a>
     </div>
-  </div>
+    <hr>
+    <div class="reserved">
+        <h4>Copyright © 2018 Ayush Bhusal LTD.</h4>
+            <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            </div>
+    </div>
   </footer>
 </body>
 </html>

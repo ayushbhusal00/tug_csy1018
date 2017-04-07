@@ -9,7 +9,9 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-/*Header begins from here*/
+/*Contents for Header begins from here
+  All pages have the same header content*/
+
 header div{
   width: 100%;
   margin: 0;
@@ -18,6 +20,49 @@ header div{
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   color: white;
+}
+
+/*Creating a hamburger icon*/
+.container {
+    position: relative;
+    display: flex;
+    background-color: #03a9f4;
+    flex-direction: row-reverse;
+}
+
+.dropbtn {
+    background-color: #03a9f4;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: #03a9f4;
+    min-width: 70%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-items a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-items a:hover {background-color: #f1f1f1}
+
+.container:hover .dropdown-items {
+    display: block;
+}
+
+.container:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 .navigationbar{
@@ -53,7 +98,7 @@ margin: 0;
 }
 
 .button{
-    padding-top: 30%;
+  padding-top: 30%;
   padding-bottom: 15%;
   border-bottom: 5px solid #03a9f4;
   transition: padding 1s ,background-color 1s;
@@ -80,54 +125,10 @@ a{
   text-decoration: none;
   color: white;
 }
-/*Header ends here*/
 
-/*Section/body begins from here*/
-/*
-section{
-  background-image: url("../images/asd2.jpg");
-  background-size:  cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-*/
-.topic{
-  font-family: 'Luckiest Guy', cursive;
-  text-align: center;
-  padding: 10%;
-}
+/*Contents for Header ends here*/
 
-.topic h2{
-  font-size: 40px;
-  -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
-   -webkit-text-fill-color: black;
-   margin: 0;
-}
-
-.topic h3{
-  font-size: 35px;
-  -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
-   -webkit-text-fill-color: black;
-   margin: 0;
-}
-/*home page content starts from here*/
-.portrait{
-  margin-bottom: 4%;
-  margin-top: 10%;
-  border: 3px solid white;
-  border-radius: 200px;
-  transition: border 1s ,transform 1s;
-  transition-timing-function: ease;
-}
-
-.portrait:hover{
-  transform: scale(1.2,1.2);
-  border: 6px white solid;
-}
-
+/*Index page contents begins from here*/
 .indexmain{
   font-family: 'Luckiest Guy', cursive;
   text-align: center;
@@ -149,10 +150,46 @@ section{
    -webkit-text-fill-color: black;
    margin: 0;
 }
+/*This is my portrait pic*/
+.portrait{
+  margin-bottom: 4%;
+  margin-top: 10%;
+  border: 3px solid white;
+  border-radius: 200px;
+  transition: border 1s ,transform 1s;
+  transition-timing-function: ease;
+}
 
-/*contents for contact form begins here*/
+.portrait:hover{
+  transform: scale(1.2,1.2);
+  border: 6px white solid;
+}
+/*Index page contents ends from here*/
 
-.contact{
+/*Title for Contact and bio is stlized here*/
+.topic{
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  padding: 10%;
+}
+
+.topic h2{
+  font-size: 40px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+   -webkit-text-fill-color: black;
+   margin: 0;
+}
+
+.topic h3{
+  font-size: 35px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+   -webkit-text-fill-color: black;
+   margin: 0;
+}
+
+.maincontent{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -160,19 +197,21 @@ section{
   margin: 1%  10%;
   box-shadow: 0px 5px 20px #888;
   padding: 2% 2%;
-
 }
+/*Contact page contents begins from here*/
 
 .sociallinks{
   text-align: center;
   width: 30%;
   font-size: 20px;
-
 }
+
+/*Creating a vertical line*/
 .vl {
     width:5px;
     background-color:grey;
 }
+
 .sendmail{
   text-align: left;
   width: 50%;
@@ -181,6 +220,7 @@ section{
 .sendmail h1{
   font-size: 30px;
 }
+
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -207,6 +247,7 @@ input[type=text] {
   padding-bottom: 20%;
   font-size: 20px;
 }
+
 .bigbox{
     width: 100%;
     height: 150px;
@@ -218,15 +259,15 @@ input[type=text] {
     font-size: 16px;
     resize: none;
 }
-  /*contents for contact form ends here*/
+/*Contact page contents ends here*/
 
-  /*contents for CV begins here*/
-
-  .cvmain{
+/*CV page contents begins from here*/
+.cvmain{
     margin: 1%  10%;
     box-shadow: 0px 5px 20px #888;
     padding: 2% 2%;
   }
+
 .cvtitle h1{
     font-size: 40px;
     background: #03a9f4;
@@ -237,12 +278,14 @@ input[type=text] {
      -webkit-text-stroke-color: white;
      -webkit-text-fill-color: black;
     color: white;
-  }
-  .portraitmain{
+}
+
+.portraitmain{
   display: flex;
   flex-direction: row;
-  }
-  .portraitmain div{
+}
+
+.portraitmain div{
     margin-left: 20%;
     align-items: center;
     font-family: 'Luckiest Guy', cursive;
@@ -250,12 +293,14 @@ input[type=text] {
      -webkit-text-stroke-color: white;
      -webkit-text-fill-color: black;
      font-size: 25px;
-  }
-  .portrait2{
+}
+
+.portrait2{
     margin-left: 10%;
     border: 3px white solid;
     border-radius: 150px;
-  }
+}
+
 .pagecontent{
   /*padding: 2% 2%;
   margin: 0.5%;*/
@@ -266,17 +311,14 @@ input[type=text] {
   align-items: center;
   font-size: 20px;
 }
+
+/*Distancing items*/
 .personalinfo , .education , .skills , .language , .hobbies , .experience{
   width: 41%;
   padding: 0% 1.5%;
 }
-  /*contents for CV ends here*/
+/*CV page contents ends here*/
 /* contents for bio starts here*/
-.biofiller{
-  margin: 1%  10%;
-  box-shadow: 0px 5px 20px #888;
-  padding: 2% 2%;
-}
 .aboutme{
   display: flex;
  flex-direction: column;
@@ -296,11 +338,7 @@ input[type=text] {
   padding: 0% 5%;
 }
 
-
-
-  /*Section/body ends here*/
-
-/*Footer Portion begins from here*/
+/*Footer contents begins from here*/
 footer{
   background: #607d8b;
   color: #212121;
@@ -308,6 +346,7 @@ footer{
   font-family: 'Montserrat', sans-serif;
   box-shadow: 0px -5px 15px #888;
 }
+
 footer div{
   text-align: center;
  }
@@ -351,14 +390,16 @@ input[type=submit]:hover {
     background-color:#0A6A8A;
     transform: scale(1.1,1.1);
 }
+
 .reserved{
   font-family: 'Cutive Mono', monospace;
   font-size: 15px;
 }
+
 .social{
   font-size: 30px;
 }
-
+/*Social media buttons--learnt from htttps://www.w3schools.com*/
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -370,16 +411,125 @@ input[type=submit]:hover {
   transition: transform 1s;
   transition-timing-function: ease;
 }
+
 .fa:hover {
     opacity: 0.5;
     transform: scale(1.1,1.1);
 }
+
 .fa-facebook{
   background: #3B5998;
   color: white;
 }
+
 .fa-instagram {
   background: #125688;
   color: white;
 }
-/*Footer Portion ends here*/
+
+/*Footer contents ends from here*/
+/*Media queries to make mobile responsive*/
+@media (max-width: 800px) and (min-width:400px) {
+.tabs{
+  display: none;
+}
+.portraitmain{
+  display: flex;
+  flex-direction: column;
+}
+.pagecontent{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin:0;
+}
+.personalinfo , .education , .skills , .language , .hobbies , .experience{
+  padding: 0% 1.5%;
+  width: 100%;
+}
+.portraitmain div{
+    margin-left: 5%;
+    align-items: center;
+    font-size: 25px;
+}
+.vl{
+  display: none;
+}
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0% 0%;
+    margin: 1%  0%;
+}
+.sociallinks{
+  padding: 0% 40%;
+}
+.sendmail{
+  width:80%;
+  padding: 10%;
+}
+.portrait{
+  transform: scale(0.7,0.7);
+}
+}
+
+@media (min-width: 801px) {
+.container{
+  display: none;
+}
+.portraitmain{
+  display: flex;
+  flex-direction: row;
+}
+.pagecontent{
+  display: flex;
+  flex-direction: row;
+}
+}
+@media (max-width: 399px) {
+.cvmain{
+    margin: 0%  0%;
+    box-shadow: 0px 5px 20px #888;
+    padding: 2% 2%;
+  }
+  .tabs{
+    display: none;
+  }
+  .portraitmain{
+    display: flex;
+    flex-direction: column;
+  }
+  .pagecontent{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin:0;
+  }
+  .personalinfo , .education , .skills , .language , .hobbies , .experience{
+    padding: 0% 1.5%;
+    width: 100%;
+  }
+  .portraitmain div{
+      margin-left: 5%;
+      align-items: center;
+      font-size: 25px;
+  }
+  .vl{
+    display: none;
+  }
+  .maincontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0% 0%;
+      margin: 1%  0%;
+  }
+    .sociallinks{
+      padding: 0% 20%;
+  }
+    .sendmail{
+      width:80%;
+      padding: 10%;
+  }
+}
